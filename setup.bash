@@ -5,6 +5,6 @@ echo "******************************"
 sudo apt install zip
 sudo apt install unzip
 echo "******************************"
-echo pwd
+echo $(pwd)
 echo "******************************"
 # source ./awscliv2/setup.bash
