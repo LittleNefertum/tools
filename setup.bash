@@ -7,4 +7,4 @@ sudo apt install unzip
 echo "******************************"
 echo pwd
 echo "******************************"
-source ./awscliv2/setup.bash
+# source ./awscliv2/setup.bash
