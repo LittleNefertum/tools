@@ -3,7 +3,11 @@
 To use this repository to setup your Ubuntu system.
 
 sudo apt update
-sudp apt install git-all
+
+sudo apt install git-all
+
 git clone https://github.com/LittleNefertum/tools.git
+
 cd tools
+
 source setup.bash
