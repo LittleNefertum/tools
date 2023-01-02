@@ -16,5 +16,5 @@ sudo apt install zip
 echo "******************************"
 echo $(pwd)
 echo "******************************"
-source $(pwd)/awscliv2/setup.bash
+source $(pwd)/install-awscliv2.bash
 # source $(pwd)/install-kubectl.bash
