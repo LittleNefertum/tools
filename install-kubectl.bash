@@ -17,7 +17,7 @@ for i in 1.19.{0..16} 1.20.{0..15} 1.21.{0..14} 1.22.{0..17} 1.23.{0..15} 1.24.{
     echo "sha256 checksum issue with $HOME/kubectl/v$i/kubectl"
   fi
 done
+echo "alias kubectl=kubectl-v$i" >> $HOME/kubectl/kubectl-aliases
 source $HOME/kubectl/kubectl-aliases
-alias kubectl=kubectl-v$i
 echo "******** kubectl aliases ************" >> $HOME/.bashrc
 echo "source $HOME/kubectl/kubectl-aliases" >> $HOME/.bashrc
