@@ -18,10 +18,6 @@ for i in 1.19.{0..16} 1.20.{0..15} 1.21.{0..14} 1.22.{0..17} 1.23.{0..15} 1.24.{
   fi
 done
 source $HOME/kubectl/kubectl-aliases
-# if [ $(echo "$(cat $HOME/kubectl/v$i/kubectl.sha256)  $HOME/kubectl/v$i/kubectl" | sha256sum --check | cut -d ' ' -f 2) == "OK" ]; then
-#   echo v$i Youpi
-# fi
-# echo "$(cat $HOME/kubectl/v$i/kubectl.sha256)  $HOME/kubectl/v$i/kubectl" | sha256sum --check | cut -d ' ' -f 2
-# echo "$(cat $HOME/kubectl/v1.26.0/kubectl.sha256)  $HOME/kubectl/v1.26.0/kubectl" | sha256sum --check | cut -d ' ' -f 2
-
-# mv ./kubectl ~/.local/bin/kubectl
+alias kubectl=kubectl-v$i
+echo "******** kubectl aliases ************" >> $HOME/.bashrc
+echo "source $HOME/kubectl/kubectl-aliases" >> $HOME/.bashrc
