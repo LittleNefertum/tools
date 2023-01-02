@@ -17,4 +17,4 @@ echo "******************************"
 echo $(pwd)
 echo "******************************"
 source $(pwd)/awscliv2/setup.bash
-source $(pwd)/test.bash
+source $(pwd)/install-kubectl.bash
