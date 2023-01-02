@@ -17,6 +17,7 @@ for i in 1.19.{0..16} 1.20.{0..15} 1.21.{0..14} 1.22.{0..17} 1.23.{0..15} 1.24.{
     echo "sha256 checksum issue with $HOME/kubectl/v$i/kubectl"
   fi
 done
+source $HOME/kubectl/kubectl-aliases
 # if [ $(echo "$(cat $HOME/kubectl/v$i/kubectl.sha256)  $HOME/kubectl/v$i/kubectl" | sha256sum --check | cut -d ' ' -f 2) == "OK" ]; then
 #   echo v$i Youpi
 # fi
