@@ -5,6 +5,7 @@ To use this repository to setup your Ubuntu system.
 sudo apt update
 
 sudo apt install git-all
+sudo apt install git-man
 
 git clone https://github.com/LittleNefertum/tools.git
 
